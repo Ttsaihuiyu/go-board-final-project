@@ -14,17 +14,58 @@
 	<script type="text/javascript" src="wgo/basicplayer.control.js"></script>
 	<script type="text/javascript" src="wgo/player.editable.js"></script>
 	<script type="text/javascript" src="wgo/player.permalink.js"></script>
-
 	<link rel="stylesheet" type="text/css" href="wgo/wgo.player.css" />
 
 </head>
 <body>
+	<div class="nav-container">
+        <button class="hamburger">&#9776;</button>
+        <div class="sidebar">
+        <nav class="menu">
+            <li><a href="#">台灣圍棋歷史</a>
+            <ul>
+                <li><a href="../history/起源.html">起源</a></li>
+                <li><a href="../rule/rule.html">中日韓名人介紹</a></li>
+            </ul>
+            </li>
+        </nav>
+        <nav class="menu">
+            
+            <li><a href="../wgo.js-master/demo6.html">棋盤</a>
+                    <ul>
+                    <li><a href="../board/boarddesign.html">棋盤設計</a></li>
+                    <li><a href="../rule/rule.html">規則</a></li>
+                </ul>
+            </li>
+            
+        </nav>
+        <nav class="menu">
+            
+            <li><a href="#">基本死活</a>
+                <ul>
+                    <li><a href="#">死活原則</a></li>
+                    <li><a href="#">死活練習</a></li>
+                </ul>
+            </li>
+        </nav>
+        <nav class="menu">
+             
+            <li><a href="#">作者</a>
+            <ul>
+                <li><a href="#">專題心得</a></li>
+                <li><a href="#">分工</a></li>
+            </ul>
+            </li>
+        </nav>
+        <li><a href="../首頁/圍棋.HTML">首頁</a>
+        </div>
+    </div>
 <h1 style="font-family: Consolas">WGo.js Player demo - alternative layout</h1>
+<img class="background" src="GOBOARD2.jpg">
 
-<h3>Gu Li (B) vs. Shi Yue</h3>
-<div data-wgo="(GM[1]SZ[19]CA[UTF-8];)" data-wgo-layout="top: ['Control']" style="width: 30%; margin: 0">
+<div data-wgo="(GM[1]SZ[19]CA[UTF-8];)" data-wgo-layout="top: ['Control']" style="width: 40%; margin:auto; top:0;">
 Your browser doesn't support WGo Player. Use some modern browser like IE9, Google Chrome or Mozilla Firefox.
 </div>
-
+<script src="../wgo.js-master/wgo/emptyboard.js"></script>
 </body>
 </html>
