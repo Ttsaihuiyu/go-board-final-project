@@ -264,7 +264,7 @@ var generate_dom = function() {
 	
 	this.resetButton = document.createElement("button");
 	this.resetButton.className = "wgo-tsumego-btn";
-	this.resetButton.innerHTML = "Retry";
+	this.resetButton.innerHTML = "重來";
 	this.resetButton.addEventListener("click", this.reset.bind(this));
 	this.resetWrapper.appendChild(this.resetButton);
 	
@@ -275,7 +275,7 @@ var generate_dom = function() {
 	
 	this.prevButton = document.createElement("button");
 	this.prevButton.className = "wgo-tsumego-btn";
-	this.prevButton.innerHTML = "Undo";
+	this.prevButton.innerHTML = "悔棋";
 	this.prevButton.addEventListener("click", this.undo.bind(this));
 	this.prevWrapper.appendChild(this.prevButton);
 	
@@ -286,7 +286,7 @@ var generate_dom = function() {
 	
 	this.hintButton = document.createElement("button");
 	this.hintButton.className = "wgo-tsumego-btn";
-	this.hintButton.innerHTML = "Hint"
+	this.hintButton.innerHTML = "提示"
 	this.hintButton.addEventListener("click", this.hint.bind(this));
 	this.hintWrapper.appendChild(this.hintButton);
 }
@@ -322,7 +322,6 @@ var Tsumego = WGo.extendClass(WGo.TsumegoApi, function(elem, config) {
 
 Tsumego.prototype.updateTsumego = function(e) {
 	if(e.node.comment) this.setInfo(WGo.filterHTML(e.node.comment));
-	else this.comment.innerHTML = (this.turn == WGo.B ? "Black" : "White")+" to play";
 	
 	if(e.node.children.length == 0) this.hintButton.disabled = "disabled";
 	else this.hintButton.disabled = "";
@@ -375,7 +374,7 @@ Tsumego.prototype.variationEnd = function(e) {
 			case 1: this.setInfo("There is a better way to solve this! Try again."); break;
 			case 2: this.setInfo("Correct solution, but there is a better move."); break;
 			case 3: this.setInfo("You have solved it!"); break;
-			default: this.setInfo("Unknown move - probably incorrect."); break;
+			default: this.setInfo("錯囉"); break;
 		}
 	}
 	
@@ -410,7 +409,7 @@ Tsumego.prototype.updateDimensions = function() {
 
 // Tsumego viewer settings
 Tsumego.default = {
-	displayHintButton: true,
+	displayHintButton: false,
 	debug: false
 }
 
