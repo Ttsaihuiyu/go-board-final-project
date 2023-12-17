@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dielife.css">
     <title>圍棋教學</title>
-    <link rel="stylesheet" type="text/css" href="bdesign.css">
 </head>
 <body>
-
-    <img class="background" src="GOBOARD2.jpg">
+    <img class="background" src="dielife.jpg">
     <div class="nav-container">
         <button class="hamburger">&#9776;</button>
         <div class="sidebar">
@@ -16,7 +15,7 @@
             <li><a href="#">圍棋歷史</a>
             <ul>
                 <li><a href="../history/起源.html">起源</a></li>
-                <li><a href="../rule/rule.html">中日韓名人介紹</a></li>
+                <li><a href="#">中日韓名人介紹</a></li>
             </ul>
             </li>
         </nav>
@@ -60,15 +59,24 @@
         </div>
     </div>
     <div class="container">
-    <div class="div"><h1>棋盤介紹:</h1>目前棋盤有分19*19和13*13還有9*9，9*9和13*13是給新手玩的，那19*19棋盤有些點有特殊名稱，現在我來一一介紹</div>
-    <img class="img" src="board.png"> 
-    <div class="div">
-        <img class="img1" src="天元.png">天元
-        <img class="img1" src="小目.png">小目
-        <img class="img1" src="目外.png">目外
-        <img class="img1" src="高目.png">高目
-    </div>
-    <script src="bdesign.js"></script>
+        <div class="div"><h1>死活:</h1> 死活是圍棋術語，即一塊圍棋棋形是死是活的問題，也是圍棋中最重要的基本概念。
+           <h2>活棋原則:</h2>兩個以上真眼或雙活<br><img src="Picture6.png"><p>由於A和B白棋不能下，因此A和B是這塊黑棋的眼睛，那黑棋做出兩個眼睛，意味著白棋不可能殺死黑棋，黑棋活。</p>
+           <img src="Picture7.png"><p>A點黑白雙方下了都會各剩一氣，然後就被提掉，因此我們稱被標記三角形的</p>
+           黑棋和白棋形成雙活，黑棋活，白棋也活。<br>
+           <img src="Picture8.png"><p>A看似是黑棋的眼，但其實是假眼，因為A右邊那顆黑棋剩一氣，所以這整塊
+           黑棋為死棋。</p>
+           <h2>常見的死活型:</h2><p>1.A位只要白下到黑死，黑走到黑活。</p>
+           <img src="Picture10.png"><p>直三</p>
+           <img src="Picture11.png"><p>彎三</p>
+           <img src="Picture12.png"><p>丁四</p>
+           <img src="Picture13.png"><p>刀五</p>
+           <h2>2.必活型</h2>
+           <img src="Picture14.png"><p>直四</p>
+           <img src="Picture15.png"><p>彎四</p>
+           <h2>3.必死型:黑先下黑也死，白先下黑也死</h2>
+           <img src="Picture16.png"><p>方四</p>
+           <script src="dielife.js"></script>
+       </div>
     </div>
 </body>
 </html>

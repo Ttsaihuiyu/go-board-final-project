@@ -8,7 +8,7 @@
   font-family: "tsumego_icons";
   font-style: normal;
   font-weight: normal;
-  speak: none;
+  
  
   display: inline-block;
   text-decoration: inherit;
@@ -135,4 +135,29 @@
 
 .wgo-tsumego-btn[disabled] {
 	opacity: 0.5;
+}
+.but{
+	background-color: #b87708; 
+	color: white; 
+	padding: 10px 20px; 
+	text-align: center; 
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px; 
+	margin: 4px 2px; 
+	position:absolute;
+
+}
+h1	{
+	text-align: center;
+	color:#ffffff
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+    
 }
